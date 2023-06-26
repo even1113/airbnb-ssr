@@ -1,0 +1,74 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: hsl(38, 8%, 8%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'Varela Round';
+  src: url('@/assets/fonts/Varela-Round.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+/* 去除图片之间的空隙 */
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+
+  /* 去除在移动端下a标签点击的蓝色背景 */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+
+/* 整个滚动条 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* 垂直滚动条和水平滚动条时交汇的部分 */
+::-webkit-scrollbar-corner {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 滚动条上的滚动滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  background-color: #cccccc;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  border-right-color: transparent;
+  border-left-color: transparent;
+  background-color: transparent;
+}
